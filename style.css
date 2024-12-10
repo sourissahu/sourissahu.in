@@ -6,16 +6,18 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
     line-height: 1.6;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-/* Full-page styling */
+/* Header */
 header {
-    background: #999966;
+    background: #0056b3;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -28,53 +30,100 @@ header .container {
 }
 
 header .profile-img {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    border: 3px solid #fff;
 }
 
 header h1 {
-    margin: 10px 0;
+    font-size: 2.2em;
+    margin-bottom: 10px;
 }
 
+header p {
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+header a {
+    color: #ffc107;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation */
 header nav {
-    margin-top: 10px;
+    margin-top: 15px;
 }
 
 header nav a {
-    color: #fff;
-    text-decoration: none;
     margin: 0 15px;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    color: #fff;
+    text-transform: uppercase;
     font-weight: bold;
 }
 
 header nav a:hover {
-    text-decoration: underline;
+    color: #ffc107;
 }
 
+/* Main Section */
 main {
     flex: 1;
-    background: #f4f4f4;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 30px;
 }
 
 main section {
     max-width: 800px;
-    text-align: center;
     background: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
 }
 
+main section h2 {
+    color: #0056b3;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0056b3;
+    padding-bottom: 5px;
+}
+
+main section p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* Footer */
 footer {
     background: #333;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 15px 0;
     font-size: 0.9em;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
