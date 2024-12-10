@@ -2,22 +2,22 @@
 body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
-    list-style: none;
     box-sizing: border-box;
 }
 
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f9;
+    background-color: #f9f9f9;
     color: #333;
+    padding: 0 10px;
 }
 
 header {
     background: #007acc;
-    color: #fff;
+    color: white;
     text-align: center;
-    padding: 2rem 0;
+    padding: 1.5rem 0;
 }
 
 header .profile-img {
@@ -25,51 +25,48 @@ header .profile-img {
     height: 150px;
     border-radius: 50%;
     margin-bottom: 1rem;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
-    font-size: 2.5rem;
     margin-bottom: 0.5rem;
 }
 
-header p {
-    font-size: 1.2rem;
+header p a {
+    color: white;
+    text-decoration: none;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    max-width: 1200px;
+header a:hover {
+    text-decoration: underline;
 }
 
 main {
-    padding: 2rem 0;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 section {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
     color: #007acc;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 0.3rem;
+    margin-bottom: 1rem;
 }
 
-p, ul {
-    margin-bottom: 1rem;
-    font-size: 1rem;
+ul {
+    list-style-type: none;
 }
 
 ul li {
-    margin-bottom: 0.5rem;
-}
-
-.project {
-    background: #fff;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     margin-bottom: 1rem;
 }
 
@@ -77,5 +74,6 @@ footer {
     text-align: center;
     padding: 1rem 0;
     background: #333;
-    color: #fff;
+    color: white;
+    margin-top: 2rem;
 }
