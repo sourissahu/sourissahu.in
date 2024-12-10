@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Souris Sahu - Projects">
-    <title>Projects - Souris Sahu</title>
+    <meta name="description" content="Souris Sahu - Blog">
+    <title>Blog - Souris Sahu</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="container">
-            <h1>Projects</h1>
+            <h1>Blog</h1>
             <nav>
                 <a href="index.html">Home</a>
-                <a href="blog.html">Blog</a>
+                <a href="projects.html">Projects</a>
                 <a href="cv/A_Customised_CurVe_CV.pdf" target="_blank">View CV</a>
             </nav>
         </div>
@@ -21,18 +21,34 @@
     
     <main>
         <section>
-            <h2>Battery Health Monitoring</h2>
-            <p>A real-time battery management system for hybrid electric vehicles. Collaboration with ARCI, Hyderabad. Status: Completed.</p>
+            <h2>Create a New Post</h2>
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+                <label for="postTitle">Title:</label><br>
+                <input type="text" id="postTitle" name="postTitle" required><br><br>
+                
+                <label for="postContent">Content:</label><br>
+                <textarea id="postContent" name="postContent" rows="5" required></textarea><br><br>
+                
+                <label for="postImage">Upload Image:</label><br>
+                <input type="file" id="postImage" name="postImage" accept="image/*"><br><br>
+                
+                <button type="submit">Post</button>
+            </form>
         </section>
         
         <section>
-            <h2>Fabrication of ZnO Fiber</h2>
-            <p>Developed ZnO nanofiber for oxygen sensing, presented at MNMC 2018, Hawaii. Status: Published.</p>
-        </section>
-        
-        <section>
-            <h2>VLSI/Embedded Systems Design</h2>
-            <p>Efficient battery management system for hybrid vehicles with supercapacitors. Completed as part of my M.Tech thesis.</p>
+            <h2>Blog Posts</h2>
+            <article>
+                <h3>Understanding Battery Management Systems</h3>
+                <p>Posted on: January 5, 2024</p>
+                <p>A detailed explanation of battery management systems and their applications in electric vehicles.</p>
+            </article>
+            
+            <article>
+                <h3>ZnO Nanofibers for Sensing</h3>
+                <p>Posted on: December 20, 2023</p>
+                <p>Exploring the potential of ZnO nanofibers for high-sensitivity oxygen sensing applications.</p>
+            </article>
         </section>
     </main>
 
