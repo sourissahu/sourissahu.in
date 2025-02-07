@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header h1 a, #header h1 a:hover {
-  color: #dee2e6;
+  color: #5D2E13;
   line-height: 1;
   display: inline-block;
 }
@@ -349,7 +349,7 @@ section .container {
   margin: 0 0 20px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #dee2e6;
+  color: #5D2E13;
   font-family: "Poppins", sans-serif;
 }
 
@@ -358,7 +358,7 @@ section .container {
   width: 120px;
   height: 1px;
   display: inline-block;
-  background: #dee2e6;
+  background: #5D2E13;
   margin: 4px 10px;
 }
 
@@ -900,7 +900,7 @@ section .container {
 
 .contact .info-box i.bx {
   font-size: 24px;
-  color: #dee2e6;
+  color: #5D2E13;
   border-radius: 50%;
   padding: 14px;
   float: left;
