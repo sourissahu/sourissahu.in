@@ -34,8 +34,7 @@ body::before {
 }
 
 a {
-  color: #F0FFFF; 
-/*  #12d640;*/
+  color: #12d640;
 }
 
 a:hover {
