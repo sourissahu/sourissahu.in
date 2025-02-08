@@ -504,7 +504,7 @@ section .container {
 }
 
 .interests .icon-box:hover {
-  background: #042b56eb;
+  background: #10CABE;
 }
 
 /*--------------------------------------------------------------
@@ -842,7 +842,7 @@ section .container {
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
-  color: #2F2F2Ffff;
+  color: #2F2F2F;
   font-size: 14px;
   text-transform: uppercase;
   padding: 0;
