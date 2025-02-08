@@ -694,23 +694,23 @@ section .container {
   transform: translateZ(-1px);
 }
 
-/*.services .icon-box h4 {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 24px;
-}*/
-
 .services .icon-box h4 {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 24px;
-  color: white; /* Main text color */
+}
+
+/*.services .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+  color: white;  
   text-shadow: 
     -0.5px -0.5px 0 #000,  
      0.5px -0.5px 0 #000,
     -0.5px  0.5px 0 #000,
      0.5px  0.5px 0 #000;
-}
+}*/
 
 .services .icon-box h4 a {
   color: #fff;
@@ -775,7 +775,7 @@ section .container {
 }
 
 .portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
-  background: #1c7d32;
+  background: #19ABB6;
 }
 
 .portfolio #portfolio-flters li:last-child {
