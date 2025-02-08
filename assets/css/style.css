@@ -694,14 +694,26 @@ section .container {
   transform: translateZ(-1px);
 }
 
+/*.services .icon-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 24px;
+}*/
+
 .services .icon-box h4 {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 24px;
+  color: black; /* Ensure text is visible */
+  text-shadow: 
+    -1px -1px 0 #ffffff,  
+     1px -1px 0 #ffffff,
+    -1px  1px 0 #ffffff,
+     1px  1px 0 #ffffff;
 }
 
 .services .icon-box h4 a {
-  color: #2F2F2F;
+  color: #fff;
 }
 
 .services .icon-box p {
