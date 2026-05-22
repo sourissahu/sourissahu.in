@@ -122,12 +122,15 @@
 
     /* ─── HERO ─── */
     #hero {
-      min-height: 100vh;
+      height: 100vh;
+      min-height: 600px;
       padding-top: 64px;
       display: grid;
       grid-template-columns: 1fr 480px;
+      grid-template-rows: 1fr auto;
       position: relative;
       overflow: hidden;
+      box-sizing: border-box;
     }
     .hero-left {
       padding: 80px 64px 80px 80px;
@@ -135,6 +138,7 @@
       flex-direction: column;
       justify-content: center;
       position: relative;
+      grid-row: 1 / 2;
     }
     .hero-eyebrow {
       font-family: var(--mono);
@@ -220,6 +224,7 @@
       background: var(--forest2);
       position: relative;
       overflow: hidden;
+      grid-row: 1 / 2;
     }
     .hero-right::before {
       content: '';
@@ -266,6 +271,7 @@
     /* Decorative bottom bar */
     .hero-strip {
       grid-column: 1 / -1;
+      grid-row: 2 / 3;
       background: var(--forest);
       display: flex;
       align-items: center;
@@ -273,6 +279,7 @@
       height: 52px;
       gap: 40px;
       overflow: hidden;
+      flex-shrink: 0;
     }
     .strip-item {
       font-family: var(--mono);
@@ -412,7 +419,7 @@
       transition: opacity var(--tr);
     }
     .edu-card:hover::after { opacity: 1; }
-    .edu-logo { height: 56px; object-fit: contain; margin-bottom: 28px; filter: brightness(0) invert(1) opacity(0.65); transition: filter var(--tr); }
+    .edu-logo { height: 60px; max-width: 160px; width: auto; object-fit: contain; margin-bottom: 28px; filter: brightness(0) invert(1) opacity(0.7); transition: filter var(--tr); display: block; }
     .edu-card:hover .edu-logo { filter: brightness(0) invert(1) opacity(0.9); }
     .edu-deg {
       font-family: var(--serif);
@@ -705,14 +712,15 @@
     /* ─── RESPONSIVE ─── */
     @media (max-width: 1100px) {
       section { padding: 80px 48px; }
-      #hero { grid-template-columns: 1fr 360px; }
+      #hero { grid-template-columns: 1fr 380px; }
     }
     @media (max-width: 900px) {
       #topnav { padding: 0 24px; }
       .nav-links { display: none; }
       .hamburger { display: block; }
-      #hero { grid-template-columns: 1fr; }
-      .hero-right { height: 320px; }
+      #hero { grid-template-columns: 1fr; grid-template-rows: auto auto auto; height: auto; min-height: 100svh; }
+      .hero-left { grid-row: 1; padding: 64px 28px 48px; }
+      .hero-right { height: 340px; grid-row: 2; }
       .hero-strip { display: none; }
       section { padding: 64px 28px; }
       .about-layout { grid-template-columns: 1fr; gap: 40px; }
@@ -880,7 +888,7 @@
   </div>
   <div class="edu-cards">
     <div class="edu-card fade-up">
-      <img src="assets/img/education/au.jpg" alt="University" class="">
+      <img src="assets/img/education/au.jpg" alt="Andhra University" class="edu-logo">
       <div class="edu-deg">B.Tech in Electrical Engineering</div>
       <div class="edu-period">January 2011 — 2015</div>
       <div class="edu-cw-label">Relevant Coursework</div>
@@ -891,7 +899,7 @@
       </ul>
     </div>
     <div class="edu-card fade-up d1">
-      <img src="assets/img/education/ASU.png" alt="University" class="">
+      <img src="assets/img/education/ASU.png" alt="Andhra Sahitya University" class="edu-logo">
       <div class="edu-deg">M.Tech in VLSI Design</div>
       <div class="edu-period">July 2018 — May 2020</div>
       <div class="edu-cw-label">Relevant Coursework</div>
@@ -902,7 +910,7 @@
       </ul>
     </div>
     <div class="edu-card fade-up d2">
-      <img src="assets/img/education/IITH.jpg" alt="IIT Hyderabad" class="">
+      <img src="assets/img/education/IITH.jpg" alt="IIT Hyderabad" class="edu-logo">
       <div class="edu-deg">Ph.D in VLSI &amp; Microelectronics</div>
       <div class="edu-period">January 2021 — Present</div>
       <div class="edu-cw-label">Relevant Coursework</div>
