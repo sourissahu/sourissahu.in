@@ -6,6 +6,30 @@
 */
 
 /*--------------------------------------------------------------
+# Design Tokens — Portfolio Variables
+--------------------------------------------------------------*/
+:root {
+  --cream:   #f4efe6;
+  --cream2:  #ede7db;
+  --parch:   #e8e0d0;
+  --forest:  #152b1e;
+  --forest2: #1e3d2a;
+  --forest3: #2b5239;
+  --amber:   #c07a1a;
+  --amber2:  #e09930;
+  --text:    #1a1610;
+  --text2:   #4a3f2e;
+  --text3:   #7a6c58;
+  --rule:    #c8b99a;
+  --card:    #faf7f2;
+  --serif:   'Playfair Display', Georgia, serif;
+  --mono:    'DM Mono', 'Courier New', monospace;
+  --body:    'Lora', Georgia, serif;
+  --r:       10px;
+  --tr:      0.28s ease;
+}
+
+/*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
@@ -656,19 +680,21 @@ section .container {
 --------------------------------------------------------------*/
 .services .icon-box {
   text-align: center;
-  background: #E1E1E1;
-  padding: 40px 40px;
-  transition: all ease-in-out 0.3s;
-  margin: 10px
+  background: var(--card);
+  border: 1px solid var(--parch);
+  border-radius: var(--r);
+  padding: 40px 32px;
+  transition: all var(--tr);
+  margin: 10px;
 }
 
 .services .icon-box .icon {
   margin: 0 auto;
   width: 64px;
   height: 64px;
-  background: #1c7d32;
-  border-radius: 5px;
-  transition: all .3s ease-out 0s;
+  background: var(--forest);
+  border-radius: 8px;
+  transition: all 0.3s ease-out 0s;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -677,7 +703,7 @@ section .container {
 }
 
 .services .icon-box .icon i {
-  color: #2F2F2F;
+  color: var(--amber2);
   font-size: 28px;
 }
 
@@ -688,61 +714,63 @@ section .container {
   top: -8px;
   height: 100%;
   width: 100%;
-  background: rgba(255, 255, 255, 0.15);
-  border-radius: 5px;
-  transition: all .3s ease-out 0s;
+  background: rgba(192, 122, 26, 0.12);
+  border-radius: 8px;
+  transition: all 0.3s ease-out 0s;
   transform: translateZ(-1px);
 }
 
 .services .icon-box h4 {
+  font-family: var(--serif);
   font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 24px;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  color: var(--forest);
+  letter-spacing: -0.01em;
 }
 
-/*.services .icon-box h4 {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 24px;
-  color: white;  
-  text-shadow: 
-    -0.5px -0.5px 0 #000,  
-     0.5px -0.5px 0 #000,
-    -0.5px  0.5px 0 #000,
-     0.5px  0.5px 0 #000;
-}*/
-
 .services .icon-box h4 a {
-  color: #fff;
+  color: var(--forest);
+  text-decoration: none;
+  transition: color var(--tr);
 }
 
 .services .icon-box p {
-  line-height: 24px;
-  font-size: 14px;
+  font-family: var(--body);
+  line-height: 1.75;
+  font-size: 0.88rem;
+  color: var(--text2);
   margin-bottom: 0;
 }
 
+/* ── Hover state ── */
 .services .icon-box:hover {
-  background: #08C2D0;
-  border-color: #1c7d32;
+  background: var(--forest);
+  border-color: var(--forest2);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(21, 43, 30, 0.15);
 }
 
 .services .icon-box:hover .icon {
-  background: #2F2F2F;
+  background: var(--amber);
 }
 
 .services .icon-box:hover .icon i {
-  color: #1c7d32;
+  color: var(--forest);
 }
 
 .services .icon-box:hover .icon::before {
-  background: #35e888;
+  background: rgba(224, 153, 48, 0.2);
 }
 
-.services .icon-box:hover h4 a, .services .icon-box:hover p {
-  color: #a265ea;
+.services .icon-box:hover h4,
+.services .icon-box:hover h4 a {
+  color: var(--cream);
 }
 
+.services .icon-box:hover p {
+  color: rgba(244, 239, 230, 0.65);
+}
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
