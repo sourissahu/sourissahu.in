@@ -39,6 +39,7 @@
       --tr:      0.28s ease;
     }
 
+
     /* ─── RESET ─── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
@@ -487,7 +488,7 @@
     .exp-layout { display: grid; grid-template-columns: 200px 1fr; gap: 0; }
     .exp-timeline-col {
       border-right: 1px solid var(--rule);
-      padding-right: 40px;
+      padding: 36px 32px 36px 0;
     }
     .exp-year-block { padding: 36px 0; }
     .exp-year {
@@ -512,9 +513,8 @@
       display: inline-block;
       margin-right: 8px;
     }
-    .exp-content-col { padding-left: 48px; }
-    .exp-entry { padding: 36px 0; border-bottom: 1px solid var(--parch); }
-    .exp-entry:last-child { border-bottom: none; }
+    .exp-content-col { padding: 36px 0 36px 48px; }
+    .exp-entry { padding: 0; }
     .exp-org {
       font-family: var(--serif);
       font-size: 1.15rem;
@@ -725,7 +725,9 @@
       section { padding: 64px 28px; }
       .about-layout { grid-template-columns: 1fr; gap: 40px; }
       .edu-cards { grid-template-columns: 1fr; }
-      .exp-layout { grid-template-columns: 1fr; }
+      .exp-item { grid-template-columns: 1fr; }
+      .exp-timeline-col { border-right: none; border-bottom: 1px solid var(--rule); padding: 0 0 16px 0; }
+      .exp-content-col { padding: 20px 0 32px 0; }
       .exp-timeline-col { border-right: none; border-bottom: 1px solid var(--rule); padding: 0 0 24px 0; margin-bottom: 24px; }
       .exp-content-col { padding-left: 0; }
       .proj-grid { grid-template-columns: repeat(2, 1fr); }
@@ -950,47 +952,34 @@
     <div class="sec-rule"></div>
   </div>
   <div class="exp-layout">
-
-    <!-- Row 1: IIT Hyderabad -->
-    <div class="exp-item">
-      <div class="exp-timeline-col">
-        <div class="exp-year-block">
-          <div class="exp-year">2017</div>
-          <div class="exp-year-end">↓ 2018</div>
-        </div>
+    <div class="exp-timeline-col">
+      <div class="exp-year-block">
+        <div class="exp-year">2017</div>
+        <div class="exp-year-end">↓ 2018</div>
       </div>
-      <div class="exp-content-col">
-        <div class="exp-entry">
-          <div class="exp-org">Indian Institute of Technology, Hyderabad</div>
-          <div class="exp-role">Research Assistant</div>
-          <ul class="exp-bullets">
-            <li>Making ZnO Nano-fiber, Electro spinning, characterization, experimental planning and setup.</li>
-            <li>Technical documentation, presentation and other research related works.</li>
-          </ul>
-        </div>
+      <div class="exp-year-block">
+        <div class="exp-year">2016</div>
+        <div class="exp-year-end">↓ 2017</div>
       </div>
     </div>
-
-    <!-- Row 2: Shannon Electrical -->
-    <div class="exp-item">
-      <div class="exp-timeline-col">
-        <div class="exp-year-block">
-          <div class="exp-year">2016</div>
-          <div class="exp-year-end">↓ 2017</div>
-        </div>
+    <div class="exp-content-col">
+      <div class="exp-entry">
+        <div class="exp-org">Indian Institute of Technology, Hyderabad</div>
+        <div class="exp-role">Research Assistant</div>
+        <ul class="exp-bullets">
+          <li>Making ZnO Nano-fiber, Electro spinning, characterization, experimental planning and setup.</li>
+          <li>Technical documentation, presentation and other research related works.</li>
+        </ul>
       </div>
-      <div class="exp-content-col">
-        <div class="exp-entry">
-          <div class="exp-org">Shannon Electrical Pvt. Ltd., Mumbai</div>
-          <div class="exp-role">Site Engineer</div>
-          <ul class="exp-bullets">
-            <li>Leading in-house electrical and delivering conduiting as per CAD design.</li>
-            <li>Manpower handling and project coordination.</li>
-          </ul>
-        </div>
+      <div class="exp-entry">
+        <div class="exp-org">Shannon Electrical Pvt. Ltd., Mumbai</div>
+        <div class="exp-role">Site Engineer</div>
+        <ul class="exp-bullets">
+          <li>Leading in-house electrical and delivering conduiting as per CAD design.</li>
+          <li>Manpower handling and project coordination.</li>
+        </ul>
       </div>
     </div>
-
   </div>
 </section>
 
