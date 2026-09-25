@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ms.Diati — Connecting...</title>
+</head>
+
+<body>
+    <p style="font-family:Arial;text-align:center;margin-top:80px;">
+        Connecting to Ms.Diati...
+    </p>
+
+    <script>
+        (function () {
+            const query = window.location.search || "";
+            const hash = window.location.hash || "";
+
+            const appUrl =
+                "msdiati://oauth2redirect" +
+                query +
+                hash;
+
+            window.location.replace(appUrl);
+        })();
+    </script>
+</body>
+</html>
